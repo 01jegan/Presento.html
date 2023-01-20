@@ -2,14 +2,6 @@
 	--primary-color:#0d6efd;
 	--secondary-color:#0dcaf0;
 }
-.header-info{
-	
-}
-.header{
-	}
-.nav{
-	color:;
-}
 .home span{
 	color:red;
 }
@@ -60,11 +52,17 @@
 	opacity: 1;
 }
 .logo .carousel .carousel-indicators button{
-	background-color:black;
+	border:1px solid black;
 	height:10px;
 	width:10px;
 	border-radius:50%;
 	
+}
+.logo .carousel .carousel-indicators button:hover{
+	background:black;
+}
+.logo .carousel .carousel-indicators button.active{
+	background:black;
 }
 .box{
 	position:relative;
@@ -83,11 +81,17 @@
 .first-box button{
 	border-radius:25px;
 	border:1px solid red;
+	background:#000;
 }
 .first-box button:hover{
 	background:red;
 	color:#fff;
 	border:1px solid red;
+}
+.first-box p{
+	line-height:25px;
+	font-size:20px;
+
 }
 .second p{
 	color:#848484;
@@ -101,19 +105,23 @@
 }
 .smile{
 	color:orange;
-	top:-10px;
-	left:145px;
+	top:-30px;
+	left:130px;
 }
 .number p{
 	font-family:raleway;
 }
 .smile i{
-	height:40px;
-	width:40px;
+	line-height:50px;
+	height:60px;
+	width:60px;
 	border-radius:50%;
 	border:4px solid #fff;
 	box-shadow:0 0 10px #ccc;
 	background-color:#fff;
+}
+.tab-items li{
+	list-style:none !important;
 }
 .abt-tab{
 	 border:none;
@@ -200,8 +208,8 @@ ul{
 	background:#252525;
 }
 .free sup{
-	top:85px;
-	left:115px;
+	top:77px;
+	left:120px;
 }
 .free button{
 	font-family:raleway;
@@ -228,10 +236,21 @@ ul{
 .SERVICES{
 	height:100px
 }
-.question-content.sec h3:after{
+.question-content.sec{
+	position:relative;
+}
+.question-content.sec h1:after{
 	content:"";
 	position:absolute;
-	bottom:18px;
+	top:50px;
+	left:48%;
+	width:50px;
+	border-top:2px solid red;
+}
+.question-content.sec1 h1:after{
+	content:"";
+	position:absolute;
+	bottom:17px;
 	left:48%;
 	width:50px;
 	border-top:2px solid red;
@@ -247,13 +266,21 @@ ul{
 .accordion-item .accordion-button:hover{
 	color:orange;
 }
+.accordion-item{
+	border:none;
+	border-bottom:1px solid rgba(0,0,0,.125);
+}
+
 .dolor{
-	background-color:#dc252525;
+	background-color:#252525;;
 	
 }
 .case i{
 	line-height:60px;
 	color:orange;
+}
+.four button{
+	border:none;
 }
 .web h3{
 	font-family:raleway;
@@ -352,14 +379,14 @@ ul{
 	box-shadow: 0 0 5px 0px #2b2b2b;
 	border-radius:15px;
 }
+.dola{
+	color:#FFFFFF80;
+}
 .ralway{
 	font-family:raleway;
 }
 .massa{
 	color:#ffffff80;
-}
-.non{
-
 }
 .TEA:after{
 	content:"";
@@ -394,7 +421,7 @@ ul{
 	left:51px;
 	opacity:0;
 }
-.twitter:hover{
+.card:hover .twitter{
 	opacity:1;
 	transform:translatey(20px);
 	transition:all 0.3s ease;
@@ -409,6 +436,9 @@ ul{
 	background-color:red;
 	line-height:40px;
 	margin:3px;
+}
+.img-fluid:hover .twitter{
+	opacity:1;
 }
 .Cto{
 	border-radius:10px;
@@ -438,9 +468,7 @@ ul{
 	color:#777777;
 	box-shadow:0 0 10px 0px #ccc ;
 }
-.contact-content1{
-	box-shadow:
-}
+
 .Our-Services span{
 	color:red;
 }
@@ -453,7 +481,9 @@ ul{
 .Our-Services p:hover{
 	color:white;
 }
-
+.footer-info{
+	background:#2b2b2b;
+}
 .footer-content.sec h3:after{
 	content:"";
 	position:absolute;
@@ -474,15 +504,19 @@ ul{
 	padding:0 0 4px 150px;
 }
 .footer-list li{
+	color:#aaaaaa;
 	line-height:35px;
 	list-style:none;
+}
+.footer-list i{
+	color:#fff;
 }
 .footer-items i{
 	width:30px;
 	height:30px;
 	line-height:30px;
 	color:#fff;
-	background-color:var(--secondary);	
+	background-color:#2b2b2b;	
 }
 .footer-value .footer-btn{
 	background:#dc3545;
@@ -494,4 +528,18 @@ ul{
 }
 .footer-items p{
 	margin:0;
+}
+.Copyright {
+	display:flex;
+	justify-content:space-between;
+}
+.Design{
+		background-color:black;	
+}
+.Magnam-dolores h1{
+	font-size:35px;
+	font-weight:600;
+}
+.Magnam-dolores p{
+	font-size:16px;
 }
